@@ -2,6 +2,8 @@
 import asyncio
 import aiohttp
 
+from typing import List
+
 from dataclasses import dataclass
 
 from lib.logging import get_logger
@@ -39,7 +41,7 @@ class SolanaCluster(object):
         self.max_vote_diff = max_vote_diff
         self.min_node_balance = min_node_balance
 
-    async def collect_info(self) -> list[SolanaNode]:
+    async def collect_info(self) -> List[SolanaNode]:
         """ Collect blockchain information
         """
         self.logger.debug("Grab data from cluster")

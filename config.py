@@ -53,8 +53,11 @@ CLUSTERS = {
 HANDLERS = {
     "smsc": {
         "phones": [
-            "+79876543210"
-        ]
+            "+79876543210",
+            "+70123456789"
+        ],
+        "login": "SMSC_LOGIN",
+        "password": "SMSC_API_PASSWORD"
     },
 
     "telegram": {

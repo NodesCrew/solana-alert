@@ -12,3 +12,7 @@ You can configure alert script for monitor you nodes in next clusters:
 - Vote diff from absoluteSlot
 - Node identity balance
 
+## Alert targets
+
+- Sending SMS to multiple numbers via smsc.ru
+- Sending Telegram messages (todo)

@@ -50,7 +50,7 @@ async def main():
                     f"Node {node.name} balance is too small! "
                     f"Node balance: {node.identity_balance}, "
                     f"min cluster balance: {cluster.min_node_balance}")
-                alerts.append(f"{node.name}: identity balance too small")
+                alerts.append(f"{node.name}: identity bal_too_small")
                 bad_nodes.append(nodes)
 
             else:

@@ -19,8 +19,10 @@ You can configure alert script for monitor you nodes in next clusters:
 
 ## Installation
 ```
+apt install python3-pip
 git clone https://github.com/myuriy/solana-alert.git
-pip install -r requirements.txt
+cd solana-alert
+pip3 install -r requirements.txt
 cp config.py config_local.py
 # vim config_local.py
 

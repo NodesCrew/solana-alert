@@ -9,7 +9,7 @@ from lib.alerts_senders import SMSC
 
 
 loop = asyncio.get_event_loop()
-logger = get_logger("simple-monitor")
+logger = get_logger("solana-alert")
 
 
 async def main():

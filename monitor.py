@@ -33,8 +33,8 @@ async def main():
 
         for node in nodes:
             if node.is_delinquent:
-                cluster.logger.warning(f"Node {node.node_pk} is delinquent!")
-                alerts.append(f"{node.name}: is delinquent")
+                cluster.logger.warning(f"Node {node.name} is delinquent!")
+                alerts.append(f"{node.name} DELINQUENT")
                 bad_nodes.append(node)
 
             elif node.vote_diff > cluster.max_vote_diff:
@@ -42,7 +42,7 @@ async def main():
                     f"Node {node.name} vote diff is too high! "
                     f"Node diff: {node.vote_diff}, "
                     f"max cluster diff: {cluster.max_vote_diff}")
-                alerts.append(f"{node.name}: bad VOTE_DIFF")
+                alerts.append(f"{node.name} VOTE_DIFF")
                 bad_nodes.append(node)
 
             elif node.identity_balance < cluster.min_node_balance:
@@ -50,7 +50,7 @@ async def main():
                     f"Node {node.name} balance is too small! "
                     f"Node balance: {node.identity_balance}, "
                     f"min cluster balance: {cluster.min_node_balance}")
-                alerts.append(f"{node.name}: identity bal_too_small")
+                alerts.append(f"{node.name} IDENTITY_BAL")
                 bad_nodes.append(nodes)
 
             else:

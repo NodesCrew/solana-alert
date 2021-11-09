@@ -23,7 +23,7 @@ class SMSC(object):
                                            login=self.login,
                                            psw=self.password,
                                            phones=",".join(self.phones),
-                                           mes="\n".join(messages)
+                                           mes=", ".join(messages)
                                        ))
             text = await response.text()
 

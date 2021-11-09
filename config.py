@@ -35,7 +35,8 @@ CLUSTERS = {
         "min_node_balance": 10 * 1_000_000_000,
         "max_vote_diff": 1,
         "nodes": {
-            "identity": "name"
+            "9Ds8XQFwboS4qedw7Nbr8iMcdXwDHMDZh82onLVzQ4Vj": "nodescrew-velas",
+            "H7DfLF7KpZFnfttsU4Tyx76ZX9YivpRZV9P3fKWzhR72": "Premagine"
         }
     },
 
